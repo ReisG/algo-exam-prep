@@ -8,6 +8,9 @@ The problem is that t2 will be changed
 
 Using codebase from https://www.geeksforgeeks.org/introduction-to-splay-tree-data-structure/
 Should learn it by heart
+
+This approuch leads to memleak if tree is allocated in heap
+This won't lead to leaks if tree is being allocated onto stack
 */
 
 
@@ -106,7 +109,7 @@ int main(void)
     Tree t2_2 = {2, 0, &t2_3};
     Tree t2 = {1, 0, &t2_2};
 
-    // printf("%d", is_subset(1, &t1, &t2));
-    print_tree(&t2);
+    printf("%d", is_subset(1, &t1, &t2));
+    // print_tree(&t2);
     return 0;
 }
