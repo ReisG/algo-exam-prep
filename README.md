@@ -34,11 +34,11 @@ Tasks done:
 - - [x] Var 1 (Prob 1 Equiv)
 - - [x] Var 2
 - - [x] Var 3
-- [ ] PREF-func
+- [x] PREF-func
 - - [x] Var 1
 - - [x] Var 2
-- - [ ] Var 3
-- - [ ] Var 4
-- - [ ] Var 5
+- - [x] Var 3
+- - [x] Var 4
+- - [x] Var 5
 - [x] RunningLetter (not sure)
 - [x] Switches
