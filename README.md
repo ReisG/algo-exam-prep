@@ -41,5 +41,4 @@ Tasks done:
 - - [ ] Var 4
 - - [ ] Var 5
 - [x] RunningLetter (not sure)
-- [ ] StringsAgain
 - [ ] Switches
