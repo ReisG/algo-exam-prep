@@ -2,11 +2,11 @@
 #include <stdlib.h>
 
 /*
-    Сначала выйдем к стволу, то есть найдём ноду deg=4
-    из неё пойдём по нодам deg=4 до ноды deg=3
-    
-    из ноды deg3 запускаем следующую проверку
-    идём по стволу и проверяем, правильные ли ветки
+    First find deg=3 it is the top
+
+    from the top going down thoght the trunk and
+    checking if branches are good (deg < 3) and trunk has
+    at most 1 truck block as neighbour excluding previous node
 */
 
 struct node
@@ -16,29 +16,19 @@ struct node
 };
 typedef struct node Node;
 
-Node* reachTrunk(Node* n, Node* last)
-{
-    if (n->deg == 4 || n->deg == 3) return n;
-    for (Node **i = n->next; i != n->next + n->deg; i++)
-    {
-        if (*i == last) continue;
-        Node *res = reachTrunk(*i, n);
-        if (res) return res;
-    }
-    return NULL;
-}
 
 Node* reachTop(Node* n, Node* last)
 {
     if (n->deg == 3) return n;
     for (Node **i = n->next; i != n->next + n->deg; i++)
     {
-        if (*i == last || (*i)->deg != 4 && (*i)->deg != 3) continue;
+        if (*i == last) continue;
         Node *res = reachTop(*i, n);
         if (res) return res;
     }
     return NULL;
 }
+
 
 int isBranch(Node* n, Node* last)
 {
@@ -71,9 +61,6 @@ int checkDown(Node* n, Node* last)
 
 int isFir(Node* node)
 {
-    node = reachTrunk(node, NULL);
-    if (!node) return 0;
-
     node = reachTop(node, NULL);
     if (!node) return 0;
 
@@ -91,6 +78,7 @@ int main(void)
     fi[0]->next = &rooti;
     fi[1]->next = &rooti;
     fi[2]->next = &rooti;
+
 
     printf("%d", isFir(f));
     return 0;
