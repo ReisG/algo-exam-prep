@@ -6,10 +6,10 @@ Tasks done:
 - [x] 2-FibStrings
 - - [x] Var 1
 - - [x] Var 2
-- [ ] 3-FairyLights
-- - [ ] Var 1
-- - [ ] Var 2
-- - [ ] Var 3
+- [x] 3-FairyLights
+- - [x] Var 1
+- - [x] Var 2
+- - [x] Var 3
 - [x] 4-Strings
 - - [x] Var 1
 - - [x] Var 2 (same as Var 1)
