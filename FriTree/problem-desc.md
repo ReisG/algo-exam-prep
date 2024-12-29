@@ -34,10 +34,10 @@ struct node {
 
 ## Примеры
 
-### Test 1 (just Top)
+### Test 1 (just `deg = 3`)
 
 #### Ввод
-```
+```C
 struct node f[] = {{1, NULL}, {1, NULL}, {1, NULL}};
 struct node* fi[] = {f, f + 1, f + 2};
 struct node root = {3, fi};
@@ -54,4 +54,36 @@ isFir(&root);
 #### Вывод
 ```
 1
+```
+
+#### Пояснение
+```
+         *
+        /|\
+       * * *
+```
+
+### Test 2 (no `deg=3`)
+#### Ввод
+```C
+struct node f[] = {{1, NULL}, {1, NULL}, {1, NULL}, {1, NULL}};
+struct node* fi[] = {f, f + 1, f + 2, f + 3};
+struct node root = {4, fi};
+
+struct node* rooti = &root;
+fi[0]->next = &rooti;
+fi[1]->next = &rooti;
+fi[2]->next = &rooti;
+fi[3]->next = &rooti;
+```
+#### Вывод
+```
+0
+```
+
+#### Пояснение 
+```
+          *
+        /| |\
+       * * * *
 ```
