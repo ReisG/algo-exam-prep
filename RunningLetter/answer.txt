@@ -1,0 +1,4 @@
+A:file:static:0
+B:block:automatic:-2
+D:block:static:-4
+E:block:automatic:0

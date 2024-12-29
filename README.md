@@ -39,6 +39,6 @@ Tasks done:
 - - [ ] Var 3
 - - [ ] Var 4
 - - [ ] Var 5
-- [ ] RunningLetter
+- [x] RunningLetter (not sure)
 - [ ] StringsAgain
 - [ ] Switches
