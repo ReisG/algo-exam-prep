@@ -12,6 +12,7 @@ Tasks done:
 - - [ ] Var 3
 - [x] 4-Strings
 - - [x] Var 1
+- - [x] Var 2 (same as Var 1)
 - [ ] 7-BitOps
 - - [x] Var 1
 - - [ ] Var 2
