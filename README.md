@@ -3,9 +3,9 @@
 Tasks done:
 - [ ] 2-Decl
 - - [ ] Var 1
-- [ ] 2-FibStrings
+- [x] 2-FibStrings
 - - [x] Var 1
-- - [ ] Var 2
+- - [x] Var 2
 - [ ] 3-FairyLights
 - - [x] Var 1
 - - [ ] Var 2
