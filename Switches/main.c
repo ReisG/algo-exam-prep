@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 char *ifs(char* s)
 {
@@ -9,7 +11,7 @@ char *ifs(char* s)
     {
         strcpy(res, "msu");
         strcat(res, s);
-        break;
+        return r;
     }
 
     if ('1' <= s[0] && s[0] <= '3')
@@ -26,4 +28,14 @@ char *ifs(char* s)
 
     strcat(res, "chill");
     return r;
+}
+
+int main(void)
+{
+    char s[] = "5ello";
+    char *ss = ifs(s);
+    puts(ss);
+
+    free(ss);
+    return 0;
 }
