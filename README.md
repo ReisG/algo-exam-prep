@@ -10,8 +10,8 @@ Tasks done:
 - - [x] Var 1
 - - [ ] Var 2
 - - [ ] Var 3
-- [ ] 4-Strings
-- - [ ] Var 1
+- [x] 4-Strings
+- - [x] Var 1
 - [ ] 7-BitOps
 - - [x] Var 1
 - - [ ] Var 2
@@ -29,7 +29,7 @@ Tasks done:
 - [x] ImWesten
 - [ ] MarkovAlg
 - - [x] Markov interpreter sample
-- - [] Markov int simplier and shorter
+- - [ ] Markov int simplier and shorter
 - - [x] Var 1 (Prob 1 Equiv)
 - - [x] Var 2
 - - [ ] Var 3
@@ -41,4 +41,4 @@ Tasks done:
 - - [ ] Var 5
 - [ ] RunningLetter
 - [ ] StringsAgain
-- [] Switches
+- [ ] Switches
