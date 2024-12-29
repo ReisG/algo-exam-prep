@@ -7,7 +7,7 @@ Tasks done:
 - - [x] Var 1
 - - [x] Var 2
 - [ ] 3-FairyLights
-- - [x] Var 1
+- - [ ] Var 1
 - - [ ] Var 2
 - - [ ] Var 3
 - [x] 4-Strings
