@@ -28,12 +28,12 @@ Tasks done:
 - [x] ByteMessage
 - [x] FriTree
 - [x] ImWesten
-- [ ] MarkovAlg
+- [x] MarkovAlg
 - - [x] Markov interpreter sample
-- - [ ] Markov int simplier and shorter
+- - [x] Markov int simplier and shorter
 - - [x] Var 1 (Prob 1 Equiv)
 - - [x] Var 2
-- - [ ] Var 3
+- - [x] Var 3
 - [ ] PREF-func
 - - [x] Var 1
 - - [x] Var 2
