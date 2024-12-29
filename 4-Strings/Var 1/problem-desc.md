@@ -9,10 +9,34 @@
 
 ### Ввод
 ```sh
-Empty set
+a
+b
+c
+d
+e
+f
+g
+h
+i
+j
+k
+l
+m
 ```
 
 ### Вывод
 ```sh
-Empty set
+b
+d
+f
+h
+j
+l
+m
+k
+i
+g
+e
+c
+a
 ```
