@@ -20,7 +20,7 @@ Tasks done:
 - [x] 8-BinaryTree
 - [ ] AVL-trees
 - - [x] Var 1
-- - [ ] Var 2
+- - [x] Var 2
 - - [ ] Var 3
 - - [ ] Var 4
 - - [ ] Var 5
