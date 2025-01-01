@@ -1,1 +1,2 @@
-20 82 81 79 69 66 39 45 5 48
+20 82 81 79 69 66 48 | 39 45 5
+everything after | is arbitrary
