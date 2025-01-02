@@ -21,7 +21,7 @@ Tasks done:
 - [ ] AVL-trees
 - - [x] Var 1
 - - [x] Var 2
-- - [ ] Var 3
+- - [x] Var 3
 - - [ ] Var 4
 - - [ ] Var 5
 - - [ ] Var 6
