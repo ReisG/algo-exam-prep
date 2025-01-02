@@ -1,8 +1,8 @@
 # MSU 1 course algorithms exam preparation
 
 Tasks done:
-- [ ] 2-Decl
-- - [ ] Var 1
+- [x] 2-Decl
+- - [x] Var 1
 - [x] 2-FibStrings
 - - [x] Var 1
 - - [x] Var 2
