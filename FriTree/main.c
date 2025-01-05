@@ -52,7 +52,7 @@ int checkDown(Node* n, Node* last)
         deg4cnt += (*i)->deg == 4;
         if ((*i)->deg == 4) gon = *i;
 
-        if (!isBranch(*i, n)) return 0;
+        if ((*i)->deg != 4 && !isBranch(*i, n)) return 0;
     }
     if (deg4cnt > 1) return 0;
 
