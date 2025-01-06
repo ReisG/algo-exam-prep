@@ -61,16 +61,19 @@ Spl *splay(Spl *t, int k)
         swap(&n, &p);
     }
 
-    n = n ? n : p;
+    // n = n ? n : p;
 
     Spl *ch, *gch;
     ch = gch = NULL;
+
+    if (n) ch = n;
+    n = p;
 
     while (n)
     {
         // fixing top structure
         Spl *up = ch;
-        if (ch || (!ch && n != p)) swap(k < n->k ? &n->l : &n->r, &up);
+        swap(k < n->k ? &n->l : &n->r, &up);
 
         if ((gch || !up) && ch) // if we have collected children or we have nowhere to go
         {
