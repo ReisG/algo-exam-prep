@@ -38,9 +38,9 @@ Spl *rotate(Spl *t, int der)
 
 int sgn(int key)
 {
-    key >>= sizeof(int)*8 - 1;
-    key &= 1;
-    return key;
+    if (key < 0) return -1;
+    else if (key > 0) return 1;
+    return 0;
 }
 
 int dir(Spl *t, int key)
@@ -54,20 +54,20 @@ Spl *splay(Spl *t, int k)
     Spl *n = t;
 
     // going down
-    while (!n && n->k != k)
+    while (n && n->k != k)
     {
         if (k < n->k) swap(&n->l, &p);
         else swap(&n->r, &p);
         swap(&n, &p);
     }
 
-    // n = n ? n : p;
+    n = n ? n : p;
 
     Spl *ch, *gch;
     ch = gch = NULL;
 
-    if (n) ch = n;
-    n = p;
+    // if (n) ch = n;
+    // n = p;
 
     while (n)
     {
@@ -75,7 +75,7 @@ Spl *splay(Spl *t, int k)
         Spl *up = ch;
         swap(k < n->k ? &n->l : &n->r, &up);
 
-        if (gch || !up) // if we have collected children or we have nowhere to go
+        if (ch && (gch || !up)) // if we have collected children or we have nowhere to go
         {
             if (!gch && !up) /*otherwise gch collected*/
             {
@@ -217,6 +217,7 @@ int main(void)
             Spl *t = look_up(&root, k);
             if (t) printf("%d %d\n", k, t->data);
         }
+        // else printf("Unknown com\n");
     }
 
     clear(root);
