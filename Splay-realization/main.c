@@ -75,12 +75,17 @@ Spl *splay(Spl *t, int k)
         Spl *up = ch;
         swap(k < n->k ? &n->l : &n->r, &up);
 
-        if ((gch || !up) && ch) // if we have collected children or we have nowhere to go
+        if (gch || !up) // if we have collected children or we have nowhere to go
         {
-            if ((!gch && !up) /*otherwise gch collected*/ || dir(n, k) == dir(ch, k))
+            if (!gch && !up) /*otherwise gch collected*/
             {
                 // case 1: vertex nearby the root single rotation
-                // and case 2: on the same side
+                n = rotate(n, -dir(n, k));
+            }
+            else if (dir(n, k) == dir(ch, k))
+            {
+                // on the same side
+                n = rotate(n, -dir(n, k));
                 n = rotate(n, -dir(n, k));
             }
             else
