@@ -22,14 +22,14 @@ struct SystemUnit {
 Функция output (в решении необходимо её объявить - сигнатура приведена ниже - но не определять) принимает на вход указатель на корень дерева и выводит древовидную описательную структуру системы. Сигнатура функции output:
 
 ```C
-struct Systemstructure {
+struct SystemStructure {
     struct SystemUnit unit;
     struct SystemStructure *left, * right;
 };
 
-void output(struct Systemstructure* root);
+void output(struct SystemStructure* root);
 ```
-Скачать приведённый пример в бинарном виде можно адресу https://earth.ispras.ru/inputs/secret_system/input.bin. (PS. не советую это делать без использования средств анонимизации трафика)
+Скачать приведённый пример в бинарном виде можно адресу https://earth.ispras.ru/inputs/secret_system/input.bin. (PS. не советую это не делать, загружайте файл из репозитория)
 
 ## Примеры
 
