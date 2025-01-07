@@ -24,7 +24,7 @@ static int *cursed(int E)
     } else {
         int C = -3;
         static int D = -4;
-        ret = &E;
+        ret = &C;
     }
     return bless(ret);
 }
