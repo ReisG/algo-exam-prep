@@ -54,14 +54,13 @@ Spl *splay(Spl *t, int k)
     Spl *n = t;
 
     // going down
+    // using link invertion to trace our way back
     while (n && n->k != k)
     {
         if (k < n->k) swap(&n->l, &p);
         else swap(&n->r, &p);
         swap(&n, &p);
     }
-
-    // n = n ? n : p;
 
     Spl *ch, *gch;
     ch = gch = NULL;
