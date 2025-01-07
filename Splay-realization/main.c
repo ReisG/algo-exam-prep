@@ -61,13 +61,13 @@ Spl *splay(Spl *t, int k)
         swap(&n, &p);
     }
 
-    n = n ? n : p;
+    // n = n ? n : p;
 
     Spl *ch, *gch;
     ch = gch = NULL;
 
-    // if (n) ch = n;
-    // n = p;
+    if (n) ch = n;
+    n = p;
 
     while (n)
     {
@@ -92,7 +92,7 @@ Spl *splay(Spl *t, int k)
             {
                 // case 3: different sides
                 *(dir(n, k) < 0 ? &n->l : &n->r) = rotate(ch, -dir(ch, k));
-                n = rotate(n, dir(n, k));
+                n = rotate(n, -dir(n, k));
             }
 
             // action happend, rewriting pointers
