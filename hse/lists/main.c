@@ -68,7 +68,9 @@ List *create(int k)
 int main(void)
 {
     //int ar[] = {-1, -2, 2, -1};
-    int ar[] = {1, -10, 100000, 1, -2};
+    // int ar[] = {1, -10, 100000};
+    // int ar[] = {-1, -2, -3, -4};
+    int ar[] = {-4, -3, -2, -1};
     List *r = create(ar[0]);
     List *n = r;
     for (int i = 1; i < sizeof(ar)/sizeof(int); i++, n = n->next)
