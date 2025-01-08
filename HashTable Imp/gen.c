@@ -6,7 +6,7 @@
 int main(void)
 {
     printf("%d\n", SZ);
-    for (int i = 1; i < SZ; i++)
+    for (int i = 0; i < SZ; i++)
     {
         int k = rand() % INT_MAX;
         int data = i;

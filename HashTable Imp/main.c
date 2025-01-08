@@ -29,6 +29,7 @@ struct HashTable *init( size_t sz,
     struct HashTable *self = calloc(1, sizeof(struct HashTable));
     self->sz = sz;
     self->buckets = calloc(sz, sizeof(struct HTCont*));
+    for (int i = 0; i < sz; i++) self->buckets[i] = NULL;
     self->hashf = hashf;
     self->comp = comp;
     self->killkey = killkey;
@@ -142,8 +143,8 @@ int main(void)
     printf("MAX in bucket: %d\n", rr);
 
 
-    void *ttt = get(ht, &k);
-    if (ttt) printf("%d\n", *(int*)ttt);
+    int *ttt = get(ht, k);
+    if (ttt) printf("%d\n", *ttt);
     else printf("NOT FOUND\n");
 
     destroy(ht);
