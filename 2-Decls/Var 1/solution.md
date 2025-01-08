@@ -12,15 +12,15 @@ length of e must be not greater then 8
 we have bitwise or so to make expression correct strings must me equal.
 
 ```
-stale##
->>>lest
+lest###
+>>stale
 =
-stalest - is the answer
+lestale - is the answer
 ```
 
 ## answer
 ```C
 char h = '3';
-const char e[] = "stalest";
+const char e[] = "lestale";
 const char *s = e + h - '0';
 ```
