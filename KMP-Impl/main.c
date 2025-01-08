@@ -77,11 +77,51 @@ int *z_func2(char *s)
     return z;
 }
 
+#define p 29
+#define m 1000000123
+
+int *pows;
+
+int *pol_hash(char *s) // size of hash is larger by one
+{
+    int n = strlen(s) + 1;
+    int *h = calloc(n, sizeof(int));
+    // primes greater than 256: 251 257 263 269 271 277 281
+    // primes greater than 26: 29 31 37 41 43 47 53 59 61 67 71
+    // numbers for module for modulo 10^9+7 1000000123 1000000321 2^64
+    
+    h[0] = 0;
+    for (int i = 0; i < n; i++) h[i + 1] = ((p*h[i] + s[i] - 'a') % m + m) % m;
+    
+    return h;
+}
+
+int sub_hash(int *h, int l, int r) // [l, r)
+{
+    return ((h[r] - h[l]*pows[r - l]) % m + m) % m;
+}
+
+
 int main(void)
 {
-    char s[] = "abacaba";
-    int *p = z_func2(s); // pref2(s); //pref(s);
-    for (int i = 0; i < strlen(s); i++) printf("%d ", p[i]);
-    free(p);
+    // prep pows
+    int pm = 1000000;
+    pows = calloc(pm, sizeof(int));
+    pows[0] = 1;
+    for (int i = 1; i < pm; i++) pows[i] = (pows[i - 1]*p % m + m) % m;
+
+    char s1[] = "abacaba";
+    char s2[] = "roabacas";
+    int *hash1 = pol_hash(s1); // z_func2(s); // pref2(s); //pref(s);
+    int *hash2 = pol_hash(s2);
+
+    printf("%d\n", sub_hash(hash1, 0, 3) == sub_hash(hash2, 2, 6));
+
+    // for (int i = 0; i < strlen(s); i++) printf("%d ", p[i]);
+    
+    free(hash1);
+    free(hash2);
+    free(pows);
+
     return 0;
 }
