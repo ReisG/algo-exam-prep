@@ -118,14 +118,18 @@ int main(void)
     struct HashTable *ht = init(100000, &hashmult, &comp, &free, &free);
 
     int *k, *data;
-    for (int i = 1; i < 10000; i++)
+    
+    int sz;
+    scanf("%d", &sz);
+    for (int i = 0; i < sz; i++)
     {
         k = malloc(sizeof(int));
         data = malloc(sizeof(int));
-        *k = rand() % INT_MAX;
-        *data = i;
+
+        scanf("%d%d", k, data);
         insert(ht, k, data);
     }
+
 
     // want to see filling profile
     int rr = 0;
