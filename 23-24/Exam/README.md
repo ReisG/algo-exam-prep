@@ -1,0 +1,44 @@
+# MSU 1 course algorithms exam preparation
+
+Tasks done:
+- [x] 2-Decl
+- - [x] Var 1
+- [x] 2-FibStrings
+- - [x] Var 1
+- - [x] Var 2
+- [x] 3-FairyLights
+- - [x] Var 1
+- - [x] Var 2
+- - [x] Var 3
+- [x] 4-Strings
+- - [x] Var 1
+- - [x] Var 2 (same as Var 1)
+- [ ] 7-BitOps
+- - [x] Var 1
+- - [ ] Var 2
+- - [ ] Var 3
+- [x] 8-BinaryTree
+- [ ] AVL-trees
+- - [x] Var 1
+- - [x] Var 2
+- - [x] Var 3
+- - [ ] Var 4
+- - [ ] Var 5
+- - [ ] Var 6
+- [x] ByteMessage
+- [x] FriTree
+- [x] ImWesten
+- [x] MarkovAlg
+- - [x] Markov interpreter sample
+- - [x] Markov int simplier and shorter
+- - [x] Var 1 (Prob 1 Equiv)
+- - [x] Var 2
+- - [x] Var 3
+- [x] PREF-func
+- - [x] Var 1
+- - [x] Var 2
+- - [x] Var 3
+- - [x] Var 4
+- - [x] Var 5
+- [x] RunningLetter (not sure)
+- [x] Switches

@@ -1,44 +1,27 @@
-# MSU 1 course algorithms exam preparation
+# Welcome to hell (msu algos exam)
 
-Tasks done:
-- [x] 2-Decl
-- - [x] Var 1
-- [x] 2-FibStrings
-- - [x] Var 1
-- - [x] Var 2
-- [x] 3-FairyLights
-- - [x] Var 1
-- - [x] Var 2
-- - [x] Var 3
-- [x] 4-Strings
-- - [x] Var 1
-- - [x] Var 2 (same as Var 1)
-- [ ] 7-BitOps
-- - [x] Var 1
-- - [ ] Var 2
-- - [ ] Var 3
-- [x] 8-BinaryTree
-- [ ] AVL-trees
-- - [x] Var 1
-- - [x] Var 2
-- - [x] Var 3
-- - [ ] Var 4
-- - [ ] Var 5
-- - [ ] Var 6
-- [x] ByteMessage
-- [x] FriTree
-- [x] ImWesten
-- [x] MarkovAlg
-- - [x] Markov interpreter sample
-- - [x] Markov int simplier and shorter
-- - [x] Var 1 (Prob 1 Equiv)
-- - [x] Var 2
-- - [x] Var 3
-- [x] PREF-func
-- - [x] Var 1
-- - [x] Var 2
-- - [x] Var 3
-- - [x] Var 4
-- - [x] Var 5
-- [x] RunningLetter (not sure)
-- [x] Switches
+This repo stores all known to me versions of msu algo exam
+
+# Contributing
+
+To submit a found task just
+1. fork the repo
+2. make changes
+3. create a pull request
+
+## Rules
+
+### Providing new tasks
+1. Place tasks in appropriate year+task folder
+2. If there already on variant of task, create folder named `var n` and place problem there
+3. If this task is new create folder with name that suits more (it's better to use one on the top of task itself)
+4. Place photo of task (it's better to get rid of names) and optionally create it in text .md format
+5. Call data with problem desctiption `problem-desc.<whatever_format_it_is>` or `problem-desc.md`
+6. It would be nice if you place images in md if it's required
+
+## Provide solution
+If you want to provide solution to the problem you need to
+1. create folder with your name on it
+2. place you main.c files in this folder
+3. Please, get rid of `.exe` `.o` and other garbage files
+4. you can provide solution description if you want (either in `main.c` or in `solution.md` with images)
